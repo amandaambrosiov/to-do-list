@@ -1,0 +1,69 @@
+/* GERAL  */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+button{
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+button:hover > i {
+    color: #ffffff;
+}
+button i{
+    font-weight: bold;
+    pointer-events: none; 
+    /* ao clicar no icone vai ser o mesmo que clicar no botão  */
+}
+input, select{
+    padding: 0.25rem 0.5rem;
+}
+
+.hide{
+    display: none;
+}
+
+/* To do header  */
+.todo-container{
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: rgb(208, 154, 245);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+/* To do Form  */
+#todo-form, #edit-form{
+    padding: 1rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+#todo-form p, #edit-form p{
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+.form-control{
+    display: flex;
+}
+
